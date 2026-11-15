@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-Persons - Etape 4</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Script externe (cours slide 24), "defer" = exécuté après le chargement du DOM (cours slide 27) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Conteneur du tableau : sert à le centrer et à fixer la police (TP slide 10) -->
+    <div id="table_container">
+        <table>
+            <!-- en-tête du tableau -->
+            <thead>
+                <tr>
+                    <th class="col_number">N°</th>
+                    <th class="col_text">Nom</th>
+                    <th class="col_text">Prénom</th>
+                    <th class="col_number">Points</th>
+                    <th class="col_chkbox">Select</th>
+                </tr>
+            </thead>
+
+            <!-- corps du tableau : vide, les lignes sont insérées par JavaScript à partir du tableau "persons" -->
+            <tbody id="table_body">
+            </tbody>
+        </table>
+
+        <!-- Espace résumé : nombre de lignes et total des points (TP slide 33) -->
+        <div id="container_summary">
+            <p id="p1">0 ligne(s)</p>
+            <p id="p2"></p>
+            <p id="p3">Totale point(s)= 0</p>
+        </div>
+
+        <!-- Bouton Ajouter : appelle maintenant doInsert (TP slide 44) -->
+        <button onclick="doInsert('nom', 'prenom', 10)">Ajouter</button>
+
+        <!-- Bouton Console Tableau : affiche le tableau "persons" dans la console (TP slide 30) -->
+        <button onclick="consoleTableau()">Console Tableau</button>
+    </div>
+</body>
+</html>
