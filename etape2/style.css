@@ -1,0 +1,37 @@
+/* Conteneur du tableau (TP slide 10) :
+   - tableau centré au milieu de la page (margin auto)
+   - police globale : Calibri en premier choix */
+#table_container {
+    width: 60%;
+    margin: 30px auto;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #0084b9;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.col_number {
+    text-align: center;
+}
+
+.col_text {
+    text-align: left;
+}
+
+.col_chkbox {
+    text-align: center;
+}
