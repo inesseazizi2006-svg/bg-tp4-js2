@@ -1,0 +1,79 @@
+/* Conteneur du tableau (TP slide 10) :
+   - tableau centré au milieu de la page (margin auto)
+   - police globale : Calibri en premier choix */
+#table_container {
+    width: 60%;
+    margin: 30px auto;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #0084b9;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.col_number {
+    text-align: center;
+}
+
+.col_text {
+    text-align: left;
+}
+
+.col_chkbox {
+    text-align: center;
+}
+
+/* ===== Etape 4 : espace "Résumé" (TP slide 34) ===== */
+/* display:flex pour mettre "N ligne(s)" à gauche et "Total point(s)" à droite */
+#container_summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee;
+    color: #555555;
+    padding: 0 10px;
+    border-bottom: 2px solid #dddddd;
+}
+
+#container_summary p {
+    margin: 8px 0;
+}
+
+/* ===== Etape 5 : formulaire de saisie (TP slide 49) ===== */
+#form_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.form_label {
+    font-weight: bold;
+}
+
+.form_field {
+    width: 130px;
+    padding: 5px;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+}
